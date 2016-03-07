@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xmlns:task="http://www.springframework.org/schema/task"
 
        xsi:schemaLocation="
                             http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-                            http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                            http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+                            http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+                            http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-extension-soap.xml"/>
 
+    <!--CXF SOAP service setup-->
+
     <jaxws:endpoint
             id="helloWorldService"
-            implementor="com.klead.hello_world_async.HelloWorldImpl"
+            implementor="com.klead.hello_world_async.soap.HelloWorldImpl"
             address="/helloWorld"/>
 
+    <context:component-scan base-package="com.klead.hello_world_async.rest"/>
+    <!-- CXF REST service setup -->
+    <jaxrs:server id="restContainer" address="/">
+        <jaxrs:serviceBeans>
+            <ref bean="helloWorldRestService" />
+        </jaxrs:serviceBeans>
+    </jaxrs:server>
+
+    <!-- Task executor service  -->
+    <task:executor id="myExecutorService" pool-size="5-10" queue-capacity="10" />
 
 </beans>

@@ -1,7 +1,9 @@
-com\klead\hello_world_async\client\callback\HelloWorldAsyncHandler.class
-com\klead\hello_world_async\types\Greeting.class
-com\klead\hello_world_async\HelloWorldImpl.class
-com\klead\hello_world_async\HelloWorldImpl$1.class
-com\klead\hello_world_async\client\polling\Client.class
-com\klead\hello_world_async\HelloWorld.class
-com\klead\hello_world_async\client\callback\Client.class
+com\klead\hello_world_async\rest\HelloWorldRest$1.class
+com\klead\hello_world_async\soap\types\Greeting.class
+com\klead\hello_world_async\rest\HelloWorldRest.class
+com\klead\hello_world_async\soap\client\callback\Client.class
+com\klead\hello_world_async\soap\HelloWorldImpl.class
+com\klead\hello_world_async\soap\client\callback\HelloWorldAsyncHandler.class
+com\klead\hello_world_async\soap\client\polling\Client.class
+com\klead\hello_world_async\soap\HelloWorldImpl$1.class
+com\klead\hello_world_async\soap\HelloWorld.class

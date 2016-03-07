@@ -1,1 +1,13 @@
-127.0.0.1 - - [07/Mar/2016:11:17:52 +0100] "POST /cxf-async-ws/helloWorld?wsdl HTTP/1.1" 200 239 http-bio-8080-exec-2 10222
+127.0.0.1 - - [07/Mar/2016:15:27:22 +0100] "POST /cxf-async-ws/helloWorld?wsdl HTTP/1.1" 200 228 http-bio-8080-exec-2 5229
+127.0.0.1 - - [07/Mar/2016:15:27:35 +0100] "POST /cxf-async-ws/helloWorld?wsdl HTTP/1.1" 200 228 http-bio-8080-exec-5 5014
+127.0.0.1 - - [07/Mar/2016:15:40:58 +0100] "GET /hello_world_rest_service/say_hello/kafi HTTP/1.1" 404 - http-bio-8080-exec-7 0
+127.0.0.1 - - [07/Mar/2016:15:41:42 +0100] "GET /hello_world_rest_service/say_hello/kafi HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [07/Mar/2016:15:42:31 +0100] "GET /hello_world_rest_service/say_hello/kafi HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [07/Mar/2016:15:43:00 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-3 5070
+127.0.0.1 - - [07/Mar/2016:15:43:17 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 406 - http-bio-8080-exec-5 7
+127.0.0.1 - - [07/Mar/2016:15:43:55 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-8 5005
+127.0.0.1 - - [07/Mar/2016:15:44:12 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-2 1005
+127.0.0.1 - - [07/Mar/2016:15:44:23 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-6 1005
+127.0.0.1 - - [07/Mar/2016:15:44:52 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-9 1006
+127.0.0.1 - - [07/Mar/2016:15:46:06 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-10 1005
+127.0.0.1 - - [07/Mar/2016:15:46:15 +0100] "GET /cxf-async-ws/hello_world_rest_service/say_hello/kafi HTTP/1.1" 200 10 http-bio-8080-exec-4 1005
