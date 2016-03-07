@@ -1,0 +1,1 @@
+127.0.0.1 - - [07/Mar/2016:11:17:52 +0100] "POST /cxf-async-ws/helloWorld?wsdl HTTP/1.1" 200 239 http-bio-8080-exec-2 10222
